@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+#bg{
+    background-image: url('images/bg_image4.jpg');
+    background-size: 100vh;
+    width: 100%;
+}
