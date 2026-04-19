@@ -1,5 +1,3 @@
-
-
 *{
     box-sizing: border-box;
 }
@@ -30,32 +28,6 @@ p{
     font-family: 'Inter', sans-serif;
 }
 
-/*.text{
-    background-image: url('images/light.jpg');
-    background-repeat: no-repeat;
-    background: radial-gradient(
-    circle at 60% 20%,      
-    rgba(255,255,255,0.9),  
-    rgba(255,255,255,0.2) 20%,
-    rgba(0,0,0,0.9) 70%     
-  );
-}*/
-@media (min-width:751px) {
-    .text2{
-    background-image: url('images/OIP.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 90vw;
-    min-height: 50vh;
-    display: flex;
-    }
-    
-    #other{
-        max-width: 60%;
-    }
-}
-
-
 .bg{
     background-image: url('images/bg_image4.jpg');
     background-size: cover;
@@ -85,46 +57,45 @@ h1, h2, p{
         0.05em 0.05em black;
 }
 
-#me{
-    top: 14%;
-    left: 60%;
-    transform: translate(-10%);
-    mask-image: linear-gradient(to top, transparent 60px, black 1px);
-    /*float: right;*/
-}
-
-@media (300 <= width <= 750) {
+/*@media (300px <= width <= 750px) {
     .container{
     display: grid;
     grid-template-areas: 
-        "bg"
-        "me"
-        "shadow";
+        "bg bg"
+        "text text";
     }
 
     .bg{
         grid-area: bg;
     }
-
-    #me{
-        grid-area: me;
-    }
-
-    .shadow{
-        grid-area: shadow;
-    }
-    .text2{
+    .text{
     background-image: url('images/OIP.webp');
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 90vw;
     min-height: 50vh;
+    grid-area: text2;
     }
 
     #other{
         min-width: 100%;
     }
 
+}*/
+
+@media (min-width:751px) {
+    .text{
+    background-image: url('images/OIP.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 90vw;
+    min-height: 50vh;
+    display: flex;
+    }
+    
+    #other{
+        max-width: 60%;
+    }
 }
 
 
