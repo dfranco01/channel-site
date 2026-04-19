@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
 *{
     box-sizing: border-box;
 }
 
-#bg{
+body{
+    background-color: black;
     background-image: url('images/bg_image4.jpg');
-    background-size: 100vh;
-    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#me{
+    left: 50%;
+    transform: translateX(-10%);
+    mask-image: linear-gradient(to top, transparent 18px, black 18px);
+    float: right;
+}
+
+h1, h2, p{
+    color: white;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: 200%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: 300%;
+}
+
+p{
+    font-size: larger;
+    font-weight: bold;
 }
