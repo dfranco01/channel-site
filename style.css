@@ -6,6 +6,22 @@
 
 body{
     background-color: black;
+}
+
+.text{
+    background-image: url('images/light.jpg');
+    background-repeat: no-repeat;
+}
+
+.text2{
+    background-image: url('images/OIP.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 90vw;
+    min-height: 50vh;
+}
+
+.bg{
     background-image: url('images/bg_image4.jpg');
     background-size: cover;
     min-height: 100vh;
@@ -13,7 +29,7 @@ body{
 
 .logo{
     font-family: 'Leckerli One';
-    font-size: 5rem;
+    font-size: 7rem;
     text-align: center;
     padding-top: 2%;
 }
@@ -35,7 +51,6 @@ h1, h2, p{
 }
 
 #me{
-    position: absolute;
     top: 14%;
     left: 60%;
     transform: translate(-10%);
