@@ -98,4 +98,18 @@ h1, h2, p{
     }
 }
 
+@media (max-width:750px) {
+    .text{
+    background-image: url('images/OIP.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 90vw;
+    min-height: 50vh;
+    }
+    
+    #other{
+        min-width: 100%;
+    }
+}
+
 
