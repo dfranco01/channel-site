@@ -35,9 +35,12 @@ h1, h2, p{
 }
 
 #me{
+    position: absolute;
+    top: 14%;
+    left: 60%;
     transform: translate(-10%);
-    mask-image: linear-gradient(to top, transparent 30px, black 18px);
-    float: right;
+    mask-image: linear-gradient(to top, transparent 60px, black 1px);
+    /*float: right;*/
 }
 
 a{
