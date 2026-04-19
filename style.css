@@ -8,18 +8,53 @@ body{
     background-color: black;
 }
 
-.text{
-    background-image: url('images/light.jpg');
-    background-repeat: no-repeat;
+a{
+    text-decoration: none;
+    color: white;
 }
 
-.text2{
+a:hover{
+    color: red;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+/*.text{
+    background-image: url('images/light.jpg');
+    background-repeat: no-repeat;
+    background: radial-gradient(
+    circle at 60% 20%,      
+    rgba(255,255,255,0.9),  
+    rgba(255,255,255,0.2) 20%,
+    rgba(0,0,0,0.9) 70%     
+  );
+}*/
+@media (min-width:751px) {
+    .text2{
     background-image: url('images/OIP.webp');
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 90vw;
     min-height: 50vh;
+    display: flex;
+    }
+    
+    #other{
+        max-width: 60%;
+    }
 }
+
 
 .bg{
     background-image: url('images/bg_image4.jpg');
@@ -58,24 +93,38 @@ h1, h2, p{
     /*float: right;*/
 }
 
-a{
-    text-decoration: none;
-    color: white;
+@media (300 <= width <= 750) {
+    .container{
+    display: grid;
+    grid-template-areas: 
+        "bg"
+        "me"
+        "shadow";
+    }
+
+    .bg{
+        grid-area: bg;
+    }
+
+    #me{
+        grid-area: me;
+    }
+
+    .shadow{
+        grid-area: shadow;
+    }
+    .text2{
+    background-image: url('images/OIP.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 90vw;
+    min-height: 50vh;
+    }
+
+    #other{
+        min-width: 100%;
+    }
+
 }
 
-a:hover{
-    color: red;
-}
 
-li{
-    list-style-type: none;
-    margin-right: 5%;
-}
-
-h2{
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-p{
-    font-family: 'Inter', sans-serif;
-}
